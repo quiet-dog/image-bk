@@ -21,6 +21,8 @@ func RunServer() {
 		panic("初始化数据库失败")
 	}
 
+	initialize.Redis()
+
 	addr := fmt.Sprintf("%s:%d", global.CONFIG.System.Host, global.CONFIG.System.Port)
 	router := initialize.InitRouters()
 	srv := http.Server{

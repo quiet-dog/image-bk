@@ -55,6 +55,7 @@ func RegisterTables(db *gorm.DB) (err error) {
 		system.ClassificationModel{},
 		system.ImageModel{},
 		system.UserModel{},
+		system.AdminModel{},
 	)
 
 	global.LOG.Info("register table success")

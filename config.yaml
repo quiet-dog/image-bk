@@ -40,3 +40,10 @@ redis:
   host: "192.168.0.216"
   port: 6380
   password: ""
+
+# jwt configuration
+jwt:
+  signing-key: mp-weixin
+  expires-time: 86400
+  buffer-time: 43200
+  issuer: mp-weixin
