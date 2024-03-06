@@ -1,0 +1,32 @@
+definitions:
+  request.WxLogin:
+    properties:
+      code:
+        type: string
+    required:
+    - code
+    type: object
+info:
+  contact: {}
+paths:
+  /mpwei/user/login:
+    post:
+      consumes:
+      - application/json
+      description: 微信小程序登陆
+      parameters:
+      - description: data
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/request.WxLogin'
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"创建成功"}'
+          schema:
+            type: string
+      summary: 微信小程序登陆
+      tags:
+      - 小程序
+swagger: "2.0"
