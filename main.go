@@ -12,5 +12,7 @@ func main() {
 	global.LOG = core.InitLogger()
 	// 微信初始化
 	initialize.InitWechat()
+	// 七牛云初始化
+	initialize.InitQiNiu()
 	core.RunServer()
 }

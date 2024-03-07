@@ -20,4 +20,5 @@ var (
 	WX                 *miniprogram.MiniProgram
 	REDIS              *redis.Client
 	ConcurrencyControl = &singleflight.Group{}
+	QiNiu              = &config.QiNiuClient{}
 )

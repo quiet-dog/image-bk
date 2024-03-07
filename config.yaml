@@ -47,3 +47,11 @@ jwt:
   expires-time: 86400
   buffer-time: 43200
   issuer: mp-weixin
+
+# 七牛云存储桶
+qiniu:
+  access-key: ""
+  secret-key: ""
+  bucket: ""
+  # token有效时间 s
+  expires-time: 3600

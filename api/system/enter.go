@@ -9,5 +9,6 @@ type ApiGroup struct {
 }
 
 var (
-	userService = service.ServiceGroupApp.SystemServiceGroup.UserService
+	userService  = service.ServiceGroupApp.SystemServiceGroup.UserService
+	qiNiuService = service.ServiceGroupApp.SystemServiceGroup.QiNiuService
 )

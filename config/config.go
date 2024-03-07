@@ -15,4 +15,5 @@ type Server struct {
 	// QuestDB     QuestDB     `mapstructure:"questdb" json:"questdb" yaml:"questdb"`
 	// Mqtt        Mqtt        `mapstructure:"mqtt" json:"mqtt" yaml:"mqtt"`
 	Wechat WechatConfig `mapstructure:"wechat" json:"wechat" yaml:"wechat"`
+	QiNiu  QiNiu        `mapstructure:"qiniu" json:"qiniu" yaml:"qiniu"`
 }
